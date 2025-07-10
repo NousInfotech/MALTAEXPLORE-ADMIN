@@ -36,7 +36,7 @@ import {
   IconBriefcase,
   IconClock
 } from '@tabler/icons-react';
-import { MapPin, Luggage, BadgeDollarSign, HandCoins, Users, DollarSign, Ticket   } from "lucide-react";
+import { MapPin, Luggage, BadgeDollarSign, HandCoins, Users, DollarSign, Ticket, Plane } from "lucide-react";
 
 
 export type Icon = React.ComponentType<IconProps>;
@@ -87,5 +87,6 @@ export const Icons = {
   handCoins : HandCoins,
   users: Users,
   dollars: DollarSign,
-  ticket: Ticket 
+  ticket: Ticket,
+  plane: Plane 
 };

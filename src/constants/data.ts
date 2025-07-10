@@ -41,7 +41,7 @@ export const navItems: NavItem[] = [
   {
     title: 'Tours',
     url: '/dashboard/tours',
-    icon: 'luggage', 
+    icon: 'plane', 
     isActive: false,
     shortcut: ['t', 't'],
     items: []
