@@ -53,7 +53,7 @@ export default function ToursListPage() {
           </Button>
         </div>
       </div>
-      <Card>
+      <Card className="container shrink-0 overflow-x-auto py-10">
         <CardHeader>
           <CardTitle>Tour Catalog</CardTitle>
           <CardDescription>
