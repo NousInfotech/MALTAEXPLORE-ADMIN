@@ -42,7 +42,7 @@ export default function SettingsPage() {
       <div className="mx-auto grid w-full max-w-6xl items-start gap-6">
         <Tabs defaultValue="payouts">
           {/* The TabsList is responsive by default and will wrap if needed on mobile */}
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3">
+          <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="payouts">Payouts</TabsTrigger>
             <TabsTrigger value="tours">Tours</TabsTrigger>
             <TabsTrigger value="notifications">Notifications</TabsTrigger>

@@ -34,7 +34,7 @@ export default function ResellersPage() {
         </div>
       </div>
       
-      <Card>
+      <Card className="container shrink-0 overflow-x-auto py-10">
         <CardHeader>
           <CardTitle>Reseller List</CardTitle>
           <CardDescription>
