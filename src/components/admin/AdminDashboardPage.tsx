@@ -36,10 +36,10 @@ export default function AdminDashboardPage() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
+              <CardTitle className="text-sm font-medium not-dark:text-green-500">
                 Total Sales (Today)
               </CardTitle>
-              <DollarSign className="h-4 w-4 text-muted-foreground" />
+              <DollarSign className="h-4 w-4 text-muted-foreground not-dark:text-red-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">€1,240.50</div>
@@ -50,10 +50,10 @@ export default function AdminDashboardPage() {
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
+              <CardTitle className="text-sm font-medium not-dark:text-green-500">
                 Total Bookings (Today)
               </CardTitle>
-              <BookCopy className="h-4 w-4 text-muted-foreground" />
+              <BookCopy className="h-4 w-4 text-muted-foreground not-dark:text-red-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">+32</div>
@@ -64,8 +64,8 @@ export default function AdminDashboardPage() {
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Active Resellers</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-sm font-medium not-dark:text-green-500">Active Resellers</CardTitle>
+              <Users className="h-4 w-4 text-muted-foreground not-dark:text-red-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">87</div>
@@ -76,8 +76,8 @@ export default function AdminDashboardPage() {
           </Card>
           <Card className="border-orange-500/50 dark:border-orange-400/60">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Pending Payouts</CardTitle>
-              <CreditCard className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-sm font-medium not-dark:text-red-500">Pending Payouts</CardTitle>
+              <CreditCard className="h-4 w-4 text-muted-foreground not-dark:text-red-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">€4,560.00</div>
@@ -157,7 +157,7 @@ export default function AdminDashboardPage() {
         </div>
         
         {/* Bottom Row: Recent Activity */}
-        <Card>
+        <Card className="not-dark:bg-rose-50/40">
             <CardHeader className="flex flex-row items-center">
               <div className="grid gap-2">
                 <CardTitle>Recent Activity</CardTitle>
@@ -165,7 +165,7 @@ export default function AdminDashboardPage() {
                   A log of recent reseller and booking activities.
                 </CardDescription>
               </div>
-              <Button asChild size="sm" className="ml-auto gap-1">
+              <Button variant="outline" asChild size="sm" className="ml-auto gap-1 not-dark:text-red-500">
                 <Link href="/admin/activity">
                   View All
                   <ArrowUpRight className="h-4 w-4" />

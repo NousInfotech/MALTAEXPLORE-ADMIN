@@ -18,7 +18,7 @@ const chartData = [
 const chartConfig = {
   sales: {
     label: "Sales",
-    color: "hsl(var(--primary))",
+    color: "#9ACD32",
   },
 } satisfies ChartConfig
 
